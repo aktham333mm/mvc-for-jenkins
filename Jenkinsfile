@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                echo "hello"
+                bat "dotnet publish -c release .//"
             }
         }
     }
