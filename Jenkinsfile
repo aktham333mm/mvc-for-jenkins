@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        my-app= "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\mvc-for-jenkins_main\\mvc-app\\bin\\Release\\net8.0\\publish"
+        my-app = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\mvc-for-jenkins_main\\mvc-app\\bin\\Release\\net8.0\\publish"
     }
     stages{
         stage("build"){
@@ -11,7 +11,7 @@ pipeline{
         }
         stage("copy the compiled app"){
             steps{
-                bat "copy ${my-pp\\*.dll}  C:\test101"
+                bat "copy ${my-app}\\*.dll  C:\test101"
             }
         }
     }
