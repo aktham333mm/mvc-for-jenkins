@@ -1,1 +1,22 @@
+pipeline{
+    agent any
+    environment{
+        
+    }
+    stages{
+        stage("build"){
+            steps{
+                sh "dotnet publish -c release .//"
+            }
+        }
+        stage("test"){
+            steps{
+                echo "hello
+            }
+        }
+    }
 
+
+
+
+}
