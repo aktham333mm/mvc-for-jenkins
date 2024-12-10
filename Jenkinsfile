@@ -1,7 +1,5 @@
 pipeline{
-    agent {
-        docker { image 'mcr.microsoft.com/dotnet/sdk:8.0' }
-    }
+    agent any
     environment{
         my_app = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\mvc-for-jenkins_main\\mvc-app\\bin\\Release\\net8.0\\publish"
     }
