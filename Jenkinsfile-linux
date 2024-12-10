@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                sh "dotnet publish -c release .//"
+                sh "dotnet publish -c release ./"
             }
         }
         stage("test"){
