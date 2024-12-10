@@ -1,6 +1,11 @@
 pipeline{
     agent any
     stages{
+        stage("test"){
+            steps{
+                echo "hello"
+            }
+        }
         stage("build"){
             steps{
                 sh "dotnet publish -c release ./"
