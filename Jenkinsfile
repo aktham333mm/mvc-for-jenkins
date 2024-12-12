@@ -11,7 +11,7 @@ pipeline{
         }
         stage("copy the compiled app"){
             steps{
-                bat "copy ${my_app}\\*.dll  C:\\test101"
+                bat "docker build -t aktham3/mvc-jenkins"
             }
         }
     }
