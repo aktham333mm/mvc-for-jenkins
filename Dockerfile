@@ -10,4 +10,4 @@ ENV PORT 80
 EXPOSE 80
 
 # Start the app
-ENTRYPOINT ["dotnet", "mvc-app.dll"]
+ENTRYPOINT ["dotnet", "/app/mvc-app.dll"]
