@@ -7,7 +7,7 @@ COPY  ./mvc-app/bin/Release/net8.0/publish/ ./
 # This is important in order for the Azure App Service to pick up the app
 
 ENV PORT 80
-EXPOSE 80
+EXPOSE 50
 
 # Start the app
 ENTRYPOINT ["dotnet", "mvc-app.dll"]
